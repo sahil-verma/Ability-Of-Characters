@@ -10,3 +10,4 @@ D:\documents\Semester 3\Rapid Application Development\MidTermAssignment-20033530
 D:\documents\Semester 3\Rapid Application Development\MidTermAssignment-200335300\MidTermAssignment-200335300\bin\Debug\COMP1004-W2017-MidTermAssgnment-StudentID.pdb
 D:\documents\Semester 3\Rapid Application Development\MidTermAssignment-200335300\MidTermAssignment-200335300\obj\Debug\COMP1004-W2017-MidTermAssgnment-StudentID.exe
 D:\documents\Semester 3\Rapid Application Development\MidTermAssignment-200335300\MidTermAssignment-200335300\obj\Debug\COMP1004-W2017-MidTermAssgnment-StudentID.pdb
+D:\documents\Semester 3\Rapid Application Development\MidTermAssignment-200335300\MidTermAssignment-200335300\obj\Debug\MidTermAssignment_200335300.AboutBox1.resources

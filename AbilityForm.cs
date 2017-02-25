@@ -89,5 +89,10 @@ namespace MidTermAssignment_200335300
             raceForm.Show();
             this.Hide();
         }
+
+        private void NextButtonClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

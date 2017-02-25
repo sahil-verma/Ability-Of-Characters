@@ -13,7 +13,11 @@ namespace MidTermAssignment_200335300
     public partial class JobForm : Form
     {
         //3. create a reference to the previous form
-        public Form previousForm;
+        public RaceForm previousForm;
+
+        public string job;
+        public string DEX, END, INT, CHA;
+
         public JobForm()
         {
             InitializeComponent();
@@ -21,12 +25,13 @@ namespace MidTermAssignment_200335300
 
         private void _charactersJob_CheckedChanged(object sender, EventArgs e)
         {
-            string DEX, END, INT, CHA;
+            
 
             if (soldierRadioButton.Checked)
             {
                 END = (Int16.Parse(AbilityForm.SetValueForENDTextBox) + 30).ToString();
                 healthPointLabel.Text = END;
+                job = "Soldier";
             }
             else
             {
@@ -37,6 +42,7 @@ namespace MidTermAssignment_200335300
             {
                 DEX = (Int16.Parse(AbilityForm.SetValueForDEXTextBox) + 28).ToString();
                 healthPointLabel.Text = DEX;
+                job = "Rogue";
             }
             else
             {
@@ -47,6 +53,7 @@ namespace MidTermAssignment_200335300
             {
                 INT = (Int16.Parse(AbilityForm.SetValueForINTTextBox) + 15).ToString();
                 healthPointLabel.Text = INT;
+                job = "Magicker";
             }
             else
             {
@@ -57,6 +64,7 @@ namespace MidTermAssignment_200335300
             {
                 CHA = (Int16.Parse(AbilityForm.SetValueForCHATextBox) + 24).ToString();
                 healthPointLabel.Text = CHA;
+                job = "Cultist";
             }
             else
             {

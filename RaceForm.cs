@@ -14,7 +14,8 @@ namespace MidTermAssignment_200335300
     {
         //3. create a reference to the previous form
         public Form previousForm;
-
+        
+        public string race;
         public RaceForm()
         {
             InitializeComponent();
@@ -34,6 +35,7 @@ namespace MidTermAssignment_200335300
                 CHA = (Int16.Parse(AbilityForm.SetValueForCHATextBox) + 5).ToString();
 
                 RacialBonusTextBox.Text = "Abilities are inc by 5";
+                race = "Human";
             }
             else
             {
@@ -54,6 +56,7 @@ namespace MidTermAssignment_200335300
                 CHA = (Int16.Parse(AbilityForm.SetValueForCHATextBox) - 10).ToString();
 
                 RacialBonusTextBox.Text = "STR and PER inc by 20, CHA dec by 20";
+                race = "Dwarf";
             }
             else
             {
@@ -69,6 +72,7 @@ namespace MidTermAssignment_200335300
                 CHA = (Int16.Parse(AbilityForm.SetValueForCHATextBox) + 15).ToString();
 
                 RacialBonusTextBox.Text = "DEX and CHA inc by 15";
+                race = "Elf";
             }
             else
             {
@@ -84,6 +88,7 @@ namespace MidTermAssignment_200335300
                 STR = (Int16.Parse(AbilityForm.SetValueForSTRTextBox) - 10).ToString();
 
                 RacialBonusTextBox.Text = "DEX and INT inc by 20 and STR dec by 10";
+                race = "Halfling";
             }
             else
             {
