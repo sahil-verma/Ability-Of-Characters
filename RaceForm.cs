@@ -93,5 +93,18 @@ namespace MidTermAssignment_200335300
             }
         }
 
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+
+            //1. intantiate 
+            RaceForm raceForm = new RaceForm();
+
+            //2. pass a reference to the 
+            raceForm.previousForm = this;
+
+            raceForm.Show();
+            this.Hide();
+        }
+
     }
 }
