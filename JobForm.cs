@@ -12,8 +12,8 @@ namespace MidTermAssignment_200335300
 {
     public partial class JobForm : Form
     {
-        // Random Number object
-        Random random = new Random();
+        //3. create a reference to the previous form
+        public Form previousForm;
         public JobForm()
         {
             InitializeComponent();
