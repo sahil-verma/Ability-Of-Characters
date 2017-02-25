@@ -97,12 +97,12 @@ namespace MidTermAssignment_200335300
         {
 
             //1. intantiate 
-            RaceForm raceForm = new RaceForm();
+            JobForm jobForm = new JobForm();
 
             //2. pass a reference to the 
-            raceForm.previousForm = this;
+            jobForm.previousForm = this;
 
-            raceForm.Show();
+            jobForm.Show();
             this.Hide();
         }
 

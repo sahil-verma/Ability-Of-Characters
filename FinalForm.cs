@@ -12,6 +12,8 @@ namespace MidTermAssignment_200335300
 {
     public partial class FinalForm : Form
     {
+        //3. create a reference to the previous form
+        public Form previousForm;
         public FinalForm()
         {
             InitializeComponent();
