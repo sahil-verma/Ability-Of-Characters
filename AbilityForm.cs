@@ -78,7 +78,7 @@ namespace MidTermAssignment_200335300
             SetValueForENDTextBox = ENDTextBox.Text;
             SetValueForINTTextBox = INTTextBox.Text;
             SetValueForPERTextBox = PERTextBox.Text;
-            SetValueForCHATextBox = PERTextBox.Text;
+            SetValueForCHATextBox = CHATextBox.Text;
 
             //1. intantiate 
             RaceForm raceForm = new RaceForm();

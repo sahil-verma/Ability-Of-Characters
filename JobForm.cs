@@ -21,15 +21,12 @@ namespace MidTermAssignment_200335300
 
         private void _charactersJob_CheckedChanged(object sender, EventArgs e)
         {
-            string STR, DEX, END, INT, PER, CHA;
+            string DEX, END, INT, CHA;
 
             if (soldierRadioButton.Checked)
             {
                 END = (Int16.Parse(AbilityForm.SetValueForENDTextBox) + 30).ToString();
-
-
-                STR = (Int16.Parse(AbilityForm.SetValueForSTRTextBox) + 5).ToString();
-                PER = (Int16.Parse(AbilityForm.SetValueForPERTextBox) + 5).ToString();
+                healthPointLabel.Text = END;
             }
             else
             {
@@ -39,6 +36,7 @@ namespace MidTermAssignment_200335300
             if (rogueRadioButton.Checked)
             {
                 DEX = (Int16.Parse(AbilityForm.SetValueForDEXTextBox) + 28).ToString();
+                healthPointLabel.Text = DEX;
             }
             else
             {
@@ -48,6 +46,7 @@ namespace MidTermAssignment_200335300
             if (magickerRadioButton.Checked)
             {
                 INT = (Int16.Parse(AbilityForm.SetValueForINTTextBox) + 15).ToString();
+                healthPointLabel.Text = INT;
             }
             else
             {
@@ -57,10 +56,11 @@ namespace MidTermAssignment_200335300
             if (cultistRadioButton.Checked)
             {
                 CHA = (Int16.Parse(AbilityForm.SetValueForCHATextBox) + 24).ToString();
+                healthPointLabel.Text = CHA;
             }
             else
             {
-                CHA = (Int16.Parse(AbilityForm.SetValueForCHATextBox) + 24).ToString();
+                CHA = (Int16.Parse(AbilityForm.SetValueForCHATextBox) - 24).ToString();
             }
 
 

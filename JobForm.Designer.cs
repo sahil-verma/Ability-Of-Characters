@@ -35,6 +35,7 @@
             this.magickerRadioButton = new System.Windows.Forms.RadioButton();
             this.cultistRadioButton = new System.Windows.Forms.RadioButton();
             this.healthPointLabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.jobGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +86,7 @@
             this.rogueRadioButton.TabStop = true;
             this.rogueRadioButton.Text = "Rogue";
             this.rogueRadioButton.UseVisualStyleBackColor = true;
+            this.rogueRadioButton.CheckedChanged += new System.EventHandler(this._charactersJob_CheckedChanged);
             // 
             // magickerRadioButton
             // 
@@ -96,6 +98,7 @@
             this.magickerRadioButton.TabStop = true;
             this.magickerRadioButton.Text = "Magicker";
             this.magickerRadioButton.UseVisualStyleBackColor = true;
+            this.magickerRadioButton.CheckedChanged += new System.EventHandler(this._charactersJob_CheckedChanged);
             // 
             // cultistRadioButton
             // 
@@ -107,18 +110,30 @@
             this.cultistRadioButton.TabStop = true;
             this.cultistRadioButton.Text = "Cultist";
             this.cultistRadioButton.UseVisualStyleBackColor = true;
+            this.cultistRadioButton.CheckedChanged += new System.EventHandler(this._charactersJob_CheckedChanged);
             // 
             // healthPointLabel
             // 
+            this.healthPointLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.healthPointLabel.Location = new System.Drawing.Point(392, 163);
             this.healthPointLabel.Name = "healthPointLabel";
             this.healthPointLabel.Size = new System.Drawing.Size(161, 49);
             this.healthPointLabel.TabIndex = 5;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(425, 134);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(128, 26);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.Text = "Health Points";
+            // 
             // JobForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(641, 508);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.healthPointLabel);
             this.Controls.Add(this.jobGroupBox);
             this.Controls.Add(this.NextButton);
@@ -129,6 +144,7 @@
             this.jobGroupBox.ResumeLayout(false);
             this.jobGroupBox.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -141,5 +157,6 @@
         private System.Windows.Forms.RadioButton rogueRadioButton;
         private System.Windows.Forms.RadioButton soldierRadioButton;
         private System.Windows.Forms.Label healthPointLabel;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
