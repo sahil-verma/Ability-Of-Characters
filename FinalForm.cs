@@ -18,5 +18,13 @@ namespace MidTermAssignment_200335300
         {
             InitializeComponent();
         }
+
+        private void _buttonClick(object sender, EventArgs e)
+        {
+            //Button _buttonClick = (Button)sender;
+            Button _buttonClick = sender as Button;
+
+            this.Close();
+        }
     }
 }
