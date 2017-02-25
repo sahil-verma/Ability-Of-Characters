@@ -119,13 +119,14 @@
             this.healthPointLabel.Name = "healthPointLabel";
             this.healthPointLabel.Size = new System.Drawing.Size(161, 49);
             this.healthPointLabel.TabIndex = 5;
+            this.healthPointLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(425, 134);
+            this.textBox1.Location = new System.Drawing.Point(415, 134);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 26);
+            this.textBox1.Size = new System.Drawing.Size(115, 26);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "Health Points";
             // 
